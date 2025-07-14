@@ -1,0 +1,400 @@
+ 	
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">	   
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" >	  
+ 
+<!-- Mirrored from camgovca.cm/fr/generalites/securisation/securisation-des-applications.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Jun 2025 07:38:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>		    
+ 	<base  />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="og:title" content="La sécurisation des applications" />
+	<meta name="og:type" content="article" />
+	<meta name="og:url" content="securisation-des-applications.html" />
+	<meta name="og:site_name" content="CamGovCA" />
+	<title>Sécurisation des applications</title>
+	<link href="securisation-des-applications.html" rel="alternate" hreflang="fr-FR" />
+	<link href="https://camgovca.cm/en/overview/securization/securing-applications.html" rel="alternate" hreflang="en-GB" />
+	<link href="../../component/search/index67ca.html?Itemid=191&amp;format=opensearch" rel="search" title="Valider CamGovCA" type="application/opensearchdescription+xml" />
+	<link href="https://camgovca.cm/modules/mod_maximenuck/themes/css3megamenu/css/maximenuck.php?monid=maximenuck117" rel="stylesheet" type="text/css" />
+	<link href="https://camgovca.cm/modules/mod_maximenuck/templatelayers/beez3-position1.css" rel="stylesheet" type="text/css" />
+	<link href="https://camgovca.cm/modules/mod_maximenuck/assets/maximenuresponsiveck.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/mod_languages/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="../../../media/jui/css/chosen.css" rel="stylesheet" type="text/css" />
+	<script src="../../../media/jui/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="../../../media/system/js/caption.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../../media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="../../../media/system/js/core.js" type="text/javascript"></script>
+	<script src="../../../media/system/js/mootools-more.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/jquery.ui.core.min.js" type="text/javascript"></script>
+	<script src="https://camgovca.cm/modules/mod_maximenuck/assets/maximenuck.js" type="text/javascript"></script>
+	<script src="https://camgovca.cm/modules/mod_maximenuck/assets/fancymenuck.js" type="text/javascript"></script>
+	<script src="../../../media/jui/js/chosen.jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(document).ready(function(jQuery){jQuery('#maximenuck117').DropdownMaxiMenu({fxtransition : 'linear',dureeIn : 0,dureeOut : 500,menuID : 'maximenuck117',testoverflow : '0',orientation : 'horizontal',behavior : 'mouseover',opentype : 'open',fxdirection : 'normal',directionoffset1 : '30',directionoffset2 : '30',showactivesubitems : '0',ismobile : 0,menuposition : '0',effecttype : 'dropdown',fxduration : 500});});jQuery(document).ready(function($){
+            $('#maximenuck117').FancyMaxiMenu({fancyTransition : 'linear',fancyDuree : 500});});
+		jQuery(document).ready(function (){
+			jQuery('.advancedSelect').chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Saisir ou choisir des options","placeholder_text_single":"S\u00e9lectionnez une option","no_results_text":"Aucun r\u00e9sultat correspondant"});
+		});
+	
+	</script>
+	<link href="securisation-des-applications.html" rel="alternate" hreflang="x-default" />
+  
+
+ <link rel="stylesheet" href="../../../templates/clubys/css/tdefaut.css" type="text/css" media="all" />   
+ <script type="text/javascript" src="../../../templates/clubys/js/jquery.js" defer></script>
+ <script type="text/javascript" src="../../../templates/clubys/js/superfish.js" defer></script>   
+ <script type="text/javascript" src="../../../templates/clubys/js/hoverIntent.js" defer></script> 
+ <script type="text/javascript" src="../../../templates/clubys/js/nivo.slider.js" defer></script>
+ <script type="text/javascript" src="../../../templates/clubys/js/scroll.js" defer></script> 
+ 
+ <link rel="icon" type="image/gif" href="../../../templates/clubys/favicon.gif" />	  
+ <link href='http://fonts.googleapis.com/css?display=swap&amp;family=Sofia:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?display=swap&amp;family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+ 
+ 
+ 	
+ 
+  
+  
+ <script type="text/javascript">           
+ var $j = jQuery.noConflict(); 	    
+ $j(document).ready(function() {	    
+ $j('.navigation ul').superfish({		
+ delay:       800,                   
+ animation:   {opacity:'show',height:'show'},  		
+ speed:       'normal',                      
+ autoArrows:  true,                         
+ dropShadows: true                          
+ });	   }); 	 
+ </script>     
+
+ <script type="text/javascript">      
+ var $j = jQuery.noConflict();       
+ jQuery(document).ready(function ($){   
+ $j("#slider").nivoSlider(          
+ {effect: "sliceUpDown",            
+ slices: 15,           
+ boxCols: 8,         
+ boxRows: 4,         
+ animSpeed: 1000,    
+ pauseTime: 5000,   
+ captionOpacity: 1      
+ }); });          
+ </script>		
+ 
+		 
+ 
+ </head> 
+<body>
+    <div class="pagewidth">
+	    <div id="header">
+	        <div id="sitename"> 
+			  <a href="http://www.camgovca.cm/">
+              <span class="logo">  
+			   <img src="../../../templates/clubys/images/govca_ban.png" width="100" height="100" alt="top" />  
+			   <!--a href="/index.php"><?php/* echo $logoname */?></a!-->			  
+			  </span>
+			  <!--a href="/index.php"><?php/* */?></a></span!-->
+			    <!--span class="slogan"></span!-->    
+				<span class="slogan">
+				
+				Cameroon Government Certification Authority
+				<br/>
+				Autorit&eacute de Certification Gouvernementale du Cameroun
+				</a>
+				</span>    
+				  				
+	        </div>
+                <div id="search">
+	                
+<form action="https://camgovca.cm/fr/generalites/securisation/securisation-des-applications.html" method="post">
+	<div class="search">
+		<input type="submit" value="Valider" class="button specialleft" onclick="this.form.searchword.focus();"/><input name="searchword" id="mod_search_searchword" maxlength="200"  class="inputbox" type="text" size="22" value="Recherche..."  onblur="if (this.value=='') this.value='Recherche...';" onfocus="if (this.value=='Recherche...') this.value='';" />
+	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="191" />
+	</div>
+</form>
+<div class="mod-languages">
+
+	<form name="lang" method="post" action="https://camgovca.cm/fr/generalites/securisation/securisation-des-applications.html">
+	<select class="inputbox advancedSelect" onchange="document.location.replace(this.value);" >
+			<option dir="ltr" value="/fr/generalites/securisation/securisation-des-applications.html" selected="selected">
+		Français (FR)</option>
+			<option dir="ltr" value="https://camgovca.cm/en/overview/securization/securing-applications.html" >
+		English (UK)</option>
+		</select>
+	</form>
+
+</div>
+
+	            </div>
+		</div>
+		    <div id="topmenu">
+                <div class="navigation">          	                     				                            
+				    
+			<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/css3megamenu/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]--><!-- debut Maximenu CK, par cedric keiflin -->
+	<div class="maximenuckh ltr" id="maximenuck117" style="z-index:10;">
+        <div class="maxiroundedleft"></div>
+        <div class="maxiroundedcenter">
+            <ul class=" maximenuck">
+								<li data-level="1" class="maximenuck headingck item173 parent first level1 " style="z-index : 12000;"><span class="separator "><span class="titreck">Accueil</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item249 first level2 " style="z-index : 11999;"><a class="maximenuck " href="../../accueil/message-du-directeur-general.html"><span class="titreck">Message du Directeur Général</span></a>
+		</li><li data-level="2" class="maximenuck item255 level2 " style="z-index : 11998;"><a class="maximenuck " href="../../accueil/a-propos-de-l-antic.html"><span class="titreck">À propos de l'ANTIC</span></a>
+		</li><li data-level="2" class="maximenuck item246 level2 " style="z-index : 11997;"><a class="maximenuck " href="../../accueil/centre-de-certification-de-l-antic.html"><span class="titreck">Centre de Certification de l'ANTIC</span></a>
+		</li><li data-level="2" class="maximenuck item250 level2 " style="z-index : 11996;"><a class="maximenuck " href="../../accueil/historique.html"><span class="titreck">Historique</span></a>
+		</li><li data-level="2" class="maximenuck item251 last level2 " style="z-index : 11995;"><a class="maximenuck " href="../../accueil/localisation.html"><span class="titreck">Localisation</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck headingck item151 parent level1 " style="z-index : 11994;"><span class="separator "><span class="titreck">Guide du Certificat</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item156 parent first level2 " style="z-index : 11993;"><span class="separator "><span class="titreck">Guide pratique du Certificat</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item152 first level3 " style="z-index : 11992;"><a class="maximenuck " href="../../guide-du-certificat/guide-pratique-du-certificat/types-de-certificats.html"><span class="titreck">Types de certificats</span></a>
+		</li><li data-level="3" class="maximenuck item154 last level3 " style="z-index : 11991;"><a class="maximenuck " href="../../guide-du-certificat/guide-pratique-du-certificat/usage-du-certificat.html"><span class="titreck">Usage du certificat</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item155 level2 " style="z-index : 11990;"><a class="maximenuck " href="../../guide-du-certificat/qu-est-ce-qu-un-certificat.html"><span class="titreck">Qu'est ce qu'un certificat ?</span></a>
+		</li><li data-level="2" class="maximenuck item159 level2 " style="z-index : 11989;"><a class="maximenuck " href="../../guide-du-certificat/service-de-certification.html"><span class="titreck">Service de certification</span></a>
+		</li><li data-level="2" class="maximenuck item161 last level2 " style="z-index : 11988;"><a class="maximenuck " href="../../guide-du-certificat/exemple-de-certificat.html"><span class="titreck">Exemple de certificat</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck headingck item162 parent level1 " style="z-index : 11987;"><span class="separator "><span class="titreck">Services et Produits</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck headingck item164 parent first level2 " style="z-index : 11986;"><span class="separator "><span class="titreck">Le certificat qualifié</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item166 first level3 " style="z-index : 11985;"><a class="maximenuck " href="../../services-et-produits/le-certificat-qualifie/fonctions-basiques.html"><span class="titreck">Fonctions basiques</span></a>
+		</li><li data-level="3" class="maximenuck item167 last level3 " style="z-index : 11984;"><a class="maximenuck " href="../../services-et-produits/le-certificat-qualifie/fonctions-additionnelles.html"><span class="titreck">Fonctions additionnelles</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item168 level2 " style="z-index : 11983;"><a class="maximenuck " href="../../services-et-produits/horodatage.html"><span class="titreck">Horodatage</span></a>
+		</li><li data-level="2" class="maximenuck item169 level2 " style="z-index : 11982;"><a class="maximenuck " href="../../services-et-produits/statut-du-certificat-en-temps-reel.html"><span class="titreck">Statut du certificat en temps réel</span></a>
+		</li><li data-level="2" class="maximenuck item171 level2 " style="z-index : 11981;"><a class="maximenuck " href="../../services-et-produits/supports-de-stockage-des-certificats.html"><span class="titreck">Supports de stockage des certificats</span></a>
+		</li><li data-level="2" class="maximenuck item172 level2 " style="z-index : 11980;"><a class="maximenuck " href="../../services-et-produits/certificat-ssl.html"><span class="titreck">Certificat SSL</span></a>
+		</li><li data-level="2" class="maximenuck item254 last level2 " style="z-index : 11979;"><a class="maximenuck " href="../../services-et-produits/identite-et-sceau-d-authentification-de-l-antic.html"><span class="titreck">Identité et sceau d'authentification de l'ANTIC</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck headingck item175 active parent level1 " style="z-index : 11978;"><span class="separator "><span class="titreck">Généralités sur la PKI</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item176 first level2 " style="z-index : 11977;"><a class="maximenuck " href="../le-livre-blanc.html"><span class="titreck">Le livre blanc</span></a>
+		</li><li data-level="2" class="maximenuck headingck item177 parent level2 " style="z-index : 11976;"><span class="separator "><span class="titreck">Généralités sur la PKI</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item179 first level3 " style="z-index : 11975;"><a class="maximenuck " href="../generalites-sur-la-pki/ca-fr.html"><span class="titreck">Autorité de certification</span></a>
+		</li><li data-level="3" class="maximenuck item181 level3 " style="z-index : 11974;"><a class="maximenuck " href="../generalites-sur-la-pki/ra-fr.html"><span class="titreck">Autorité d'enregistrement</span></a>
+		</li><li data-level="3" class="maximenuck item183 level3 " style="z-index : 11973;"><a class="maximenuck " href="../generalites-sur-la-pki/tsa-fr.html"><span class="titreck">Autorité d'horodatage</span></a>
+		</li><li data-level="3" class="maximenuck item184 last level3 " style="z-index : 11972;"><a class="maximenuck " href="../generalites-sur-la-pki/ocsp-fr.html"><span class="titreck">OCSP</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="2" class="maximenuck item187 level2 " style="z-index : 11971;"><a class="maximenuck " href="../algorithmes-de-securite.html"><span class="titreck">Algorithmes de securité</span></a>
+		</li><li data-level="2" class="maximenuck headingck item189 active parent last level2 " style="z-index : 11970;"><span class="separator "><span class="titreck">Sécurisation</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="3" class="maximenuck item191 current active first level3 " style="z-index : 11969;"><a class="maximenuck " href="securisation-des-applications.html"><span class="titreck">Sécurisation des applications</span></a>
+		</li><li data-level="3" class="maximenuck item192 last level3 " style="z-index : 11968;"><a class="maximenuck " href="criteres-techniques.html"><span class="titreck">Critères techniques</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck headingck item193 parent level1 " style="z-index : 11967;"><span class="separator "><span class="titreck">Règlementation &amp; Politique</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item196 first level2 " style="z-index : 11966;"><a class="maximenuck " href="../../reglementation-politique/charte-d-abonnement.html"><span class="titreck">Charte d'abonnement</span></a>
+		</li><li data-level="2" class="maximenuck item199 level2 " style="z-index : 11965;"><a class="maximenuck " href="../../reglementation-politique/lois-et-reglements.html"><span class="titreck">Lois et Règlements </span></a>
+		</li><li data-level="2" class="maximenuck item200 level2 " style="z-index : 11964;"><a class="maximenuck " href="../../reglementation-politique/dpc.html"><span class="titreck">Déclaration des Pratiques de Certification</span></a>
+		</li><li data-level="2" class="maximenuck item202 level2 " style="z-index : 11963;"><a class="maximenuck " href="../../reglementation-politique/politique-de-certificats.html"><span class="titreck">Politique de certificats</span></a>
+		</li><li data-level="2" class="maximenuck item198 last level2 " style="z-index : 11962;"><a class="maximenuck " href="../../reglementation-politique/politique-de-confidentialite.html"><span class="titreck">Politique de confidentialité</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li><li data-level="1" class="maximenuck headingck item257 parent level1 " style="z-index : 11961;"><span class="separator "><span class="titreck">Partenaires</span></span>
+	<div class="floatck" style=""><div class="maxidrop-top"><div class="maxidrop-top2"></div></div><div class="maxidrop-main" style=""><div class="maxidrop-main2"><div class="maximenuck2 first " >
+	<ul class="maximenuck2"><li data-level="2" class="maximenuck item186 last first level2 " style="z-index : 11960;"><a class="maximenuck " href="../../partenaires/nos-partenaires.html"><span class="titreck">Nos partenaires</span></a>
+	</li>
+	</ul>
+	<div class="clr"></div></div><div class="clr"></div></div></div><div class="maxidrop-bottom"><div class="maxidrop-bottom2"></div></div></div>
+	</li>            </ul>
+        </div>
+        <div class="maxiroundedright"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- fin maximenuCK -->
+                                               
+				</div>
+            </div>
+                                
+	                            
+		        				
+				                  
+                        <div id="main">				                                                               
+     					    <div class="item-page gk-item-page">
+	
+	
+	
+	
+	
+	<div class="gk-article">
+	
+		
+		
+		<h1 class="article-header">
+			
+				La sécurisation des applications
+			
+		</h1>
+	
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	<p style="text-align: justify;">La d&eacute;mat&eacute;rialisation de nombreuses proc&eacute;dures administratives envisag&eacute;e est d&eacute;j&agrave; effective depuis un certain temps au Cameroun, donnant ainsi naissance aux t&eacute;l&eacute;proc&eacute;dures telles que le paiement en ligne des taxes et droits de douanes du Guichet Unique des Op&eacute;rations du Commerce Ext&eacute;rieur, la t&eacute;l&eacute;d&eacute;claration de la Caisse Nationale de la Pr&eacute;voyance Sociale (CNPS), le paiement en ligne de la Taxe sur la Valeur Ajout&eacute;e, ou encore la d&eacute;claration d&rsquo;imp&ocirc;ts via Internet&hellip;</p>
+<p style="text-align: justify;">Avec l&rsquo;av&egrave;nement puis la r&eacute;alisation de telles initiatives, il ne s&rsquo;agit plus simplement de v&eacute;rifier l&rsquo;identit&eacute; de l&rsquo;individu par le biais d&rsquo;une authentification forte ou de garantir qu&rsquo;une information ne peut &ecirc;tre accessible qu&rsquo;aux seules personnes habilit&eacute;es, dans le cadre de la confidentialit&eacute; des &eacute;changes. Il convient d&eacute;sormais &eacute;galement de s&rsquo;assurer que d&rsquo;une part, les donn&eacute;es transmises n&rsquo;ont pas &eacute;t&eacute; modifi&eacute;es par un tiers&nbsp;: int&eacute;grit&eacute; des donn&eacute;es &eacute;chang&eacute;es, et que d&rsquo;autre part, une organisation ou un individu impliqu&eacute; dans un &eacute;change ne puisse pas nier son r&ocirc;le dans l&rsquo;&eacute;change&nbsp;: la non-r&eacute;pudiation.</p>
+<p style="text-align: justify;">Il y a donc lieu de s&eacute;curiser les applications elles-m&ecirc;mes et toutes les transactions en ligne dans lesquelles sont impliqu&eacute;s lesdits syst&egrave;mes.</p>
+<p style="text-align: justify;"><strong><span style="color: #3366ff;">L'int&eacute;gration des fonctions cryptographiques dans une application</span></strong></p>
+<p style="text-align: justify;">La s&eacute;curisation repose sur l&rsquo;int&eacute;gration des fonctions cryptographiques dans une application. Il s&rsquo;agit d&rsquo;une technique qui consiste en&nbsp;:</p>
+<p>-&nbsp;la conduite des s&eacute;ances de travail en vue de la collecte des informations sur les applications candidates &agrave; la s&eacute;curisation&nbsp;; <a href="https://camgovca.cm/images/downloads/articles/Formulaires/French/Questionnaire sécurisation.pdf" target="_blank" title="Questionnaire s&eacute;curisation"><span style="text-decoration: underline;"><span style="color: #3366ff; text-decoration: underline;">Voir le questionnaire sur la s&eacute;curisation</span></span></a></p>
+<p>-&nbsp;le choix des toolkits (sortes de biblioth&egrave;ques et d&rsquo;API de s&eacute;curit&eacute;)&nbsp;; <a href="https://camgovca.cm/images/downloads/articles/Formulaires/French/Demande de Toolkits.pdf" target="_blank" title="Demande de toolkits"><span style="text-decoration: underline;"><span style="color: #3366ff; text-decoration: underline;">Voir le formulaire de demande des toolkits</span></span></a></p>
+<p style="text-align: justify;">-&nbsp;l&rsquo;analyse ou le design des flux et autres activit&eacute;s du syst&egrave;me &agrave; s&eacute;curiser pour mieux comprendre son mode de fonctionnement&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;l&rsquo;int&eacute;gration du toolkit dans le serveur d&rsquo;application et dans le client&nbsp;pour lui permettre de supporter&nbsp;:</p>
+<ul style="text-align: justify;">
+<li>le chiffrement/d&eacute;chiffrement des donn&eacute;es&nbsp;;</li>
+<li>la signature &eacute;lectronique et la v&eacute;rification des signatures&nbsp;;</li>
+<li>l&rsquo;identification formelle en ligne des internautes en communication&nbsp;;</li>
+<li>les algorithmes de s&eacute;curit&eacute;&nbsp;;</li>
+<li>le protocole CMS (Cryptographic Message Syntax)&nbsp;;</li>
+<li>le protocole LDAP&nbsp;; &nbsp;</li>
+<li>le protocole OCSP&nbsp;;</li>
+<li>le protocole TSP&nbsp;;</li>
+<li>les supports de sauvegarde des certificats et des cl&eacute;s associ&eacute;es&nbsp;;</li>
+<li>les activit&eacute;s de plusieurs navigateurs&nbsp;;</li>
+<li>la longueur de cl&eacute; conventionnelle.</li>
+</ul>
+<p style="text-align: justify;">-&nbsp;le d&eacute;veloppement&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;la formation des d&eacute;veloppeurs,des &eacute;diteurs d&rsquo;applications&nbsp;et des op&eacute;rateurs de l&rsquo;autorit&eacute; d&rsquo;enregistrement locale&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;les tests de fonctionnalit&eacute;&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;les activit&eacute;s d&rsquo;&eacute;mission de certificats.</p>
+<p style="text-align: center;">&nbsp;<img src="../../../images/secu.png" alt="secu" width="500" height="305" />&nbsp;</p>
+<p style="text-align: justify;">La s&eacute;curisation des applications se fait par int&eacute;gration des fonctions cryptographiques de fa&ccedil;on active ou de fa&ccedil;on passive.</p>
+<p style="text-align: justify;"><strong><span style="color: #3366ff;">L'Int&eacute;gration active</span></strong></p>
+<p style="text-align: justify;">L&rsquo;int&eacute;gration des fonctions cryptographiques et d&rsquo;acc&egrave;s &agrave; la PKI peut se faire au sein m&ecirc;me de l&rsquo;application, lors de son d&eacute;veloppement ou m&ecirc;me apr&egrave;s. Il s&rsquo;agit dans ce dernier cas d&rsquo;une int&eacute;gration "active" des modules de s&eacute;curit&eacute;, directement au sein du code source de l&rsquo;application.</p>
+<p style="text-align: justify;">La fonction d&rsquo;int&eacute;gration active du toolkit client et du toolkit serveur, ainsi que le d&eacute;veloppement de l&rsquo;application qui s&rsquo;en suit sont du ressort de l&rsquo;&eacute;diteur qui est seul habilet&eacute; &agrave; intervenir dans son application pendant que celle-ci est en production pour des questions d&rsquo;&eacute;thique et de propri&eacute;t&eacute; intellectuelle.&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: center;"><img src="../../../images/system%20security.png" alt="system security" />&nbsp;</p>
+<p style="text-align: justify;"><strong>Principe d&rsquo;int&eacute;gration active</strong></p>
+<p style="text-align: justify;">L&rsquo;int&eacute;gration active des m&eacute;canismes de s&eacute;curit&eacute; au sein des applications s&rsquo;appuie sur des toolkits de d&eacute;veloppement ou SDK (Software Development Kit) g&eacute;n&eacute;ralement disponibles pour les langages C/C++, Java, DotNET, PHP... Ces kits fournissent aux d&eacute;veloppeurs diff&eacute;rents niveaux d&rsquo;interface de programmation (API), que l&rsquo;on peut classer en trois types :</p>
+<p style="text-align: justify;">-&nbsp;des API orient&eacute;es application : il s&rsquo;agit de kits de d&eacute;veloppement permettant l&rsquo;impl&eacute;mentation des protocoles normalis&eacute;s comme SSL, TLS, S/MIME ou encore la s&eacute;curisation des documents au format XML&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;des API de bas niveau fournissant des fonctions cryptographiques &eacute;l&eacute;mentaires comme le chiffrement, le hachage ou l&rsquo;encodage&nbsp;;</p>
+<p style="text-align: justify;">-&nbsp;des API interm&eacute;diaires permettant de rendre une PKI compatible avec une application.</p>
+<p style="text-align: justify;">Ces API permettent d&rsquo;une part, &agrave; l&rsquo;application d&rsquo;exploiter l&rsquo;infrastructure de confiance pour valider les certificats. Elles offrent ainsi des librairies clientes permettant de r&eacute;cup&eacute;rer et de traiter les listes de r&eacute;vocation des certificats, de d&eacute;velopper un client Online Certificate Status Protocol (OCSP), de lire le temps &agrave; l&rsquo;aide du client Time Stamping Protocol (TSP), d&rsquo;acc&eacute;der &agrave; l&rsquo;annuaire LDAP, de v&eacute;rifier la cha&icirc;ne compl&egrave;te de certification, de v&eacute;rifier une signature num&eacute;rique, de signer &eacute;lectroniquement des transactions, de chiffrer et de d&eacute;chiffrer les flux d&rsquo;informations en ligne. Ces API permettent d&rsquo;autre part, &agrave; une application de d&eacute;finir elle-m&ecirc;me son propre protocole de s&eacute;curisation des &eacute;changes. Ce dernier s&rsquo;appuie sur des fonctions ou classes mettant en &oelig;uvre les m&eacute;canismes d&rsquo;&eacute;mission de la signature &eacute;lectronique/v&eacute;rification de la signature &eacute;lectronique ou de transport s&eacute;curis&eacute; des donn&eacute;es.</p>
+<p style="text-align: justify;">L&rsquo;int&eacute;gration des toolkits permet &agrave; l&rsquo;application d&rsquo;avoir un contr&ocirc;le total des m&eacute;canismes de s&eacute;curit&eacute;&nbsp;: instauration d&rsquo;une session SSL, type des algorithmes de chiffrement, taille des cl&eacute;s, etc... Cette approche est s&ucirc;re mais on&eacute;reuse. Elle induit une adh&eacute;rence certaine entre les applications d&eacute;velopp&eacute;es et le kit de d&eacute;veloppement utilis&eacute;.</p>
+<p style="text-align: justify;">Nous d&eacute;crivons ci-dessous deux exemples de s&eacute;curisation d&rsquo;application&nbsp;: la s&eacute;curisation de la messagerie et la s&eacute;curisation d&rsquo;application Web sur HTTP.</p>
+<p style="text-align: justify;"><strong><span style="color: #3366ff;">La s&eacute;curisation par insertion du toolkit dans un serveur-relais&nbsp;: Int&eacute;gration passive</span></strong></p>
+<p style="text-align: justify;">L&rsquo;approche "Reverse-proxy" permet de s&eacute;curiser sans modification de code source de nombreuses applications, dont certaines applications bas&eacute;es Web. N&eacute;anmoins, l&rsquo;ajout de composants compl&eacute;mentaires, g&eacute;n&eacute;ralement des agents, se r&eacute;v&egrave;le dans la pratique souvent in&eacute;vitable.</p>
+<p style="text-align: justify;">Par construction, ce serveur-relais constitue un point de passage oblig&eacute; : il centralise un certain nombre de v&eacute;rifications concernant le certificat pr&eacute;sent&eacute; par le client&nbsp;&agrave; l&rsquo;instar de la v&eacute;rification de la signature du certificat, du statut&hellip; avant de relayer les flux applicatifs vers des applications ou serveurs cibles.</p>
+<p style="text-align: justify;">Ce serveur relais peut, selon les cas et les offres, assurer, au-del&agrave; du service d&rsquo;authentification, de SSO (Single Sign On = authentification une seule fois pour l&rsquo;acc&egrave;s &agrave; de multiples applications), voire de gestion centralis&eacute;e des habilitations des utilisateurs.</p>
+<p style="text-align: justify;"><strong><span style="color: #3366ff;">S&eacute;curisation des applications Web</span></strong>&nbsp;</p>
+<p style="text-align: justify;">Dans le cas d&rsquo;une application Web, l&rsquo;int&eacute;gration de "toolkit" au sein du serveur HTTP et du navigateur permet de pallier les lacunes actuelles des impl&eacute;mentations natives de SSL. Les modules logiciels ajout&eacute;s peuvent, suivant les offres, assurer eux-m&ecirc;mes des v&eacute;rifications compl&eacute;mentaires ou bien les d&eacute;l&eacute;guer &agrave; un serveur central de s&eacute;curit&eacute;.</p>
+<p style="text-align: justify;">Dans le premier cas, le "toolkit" ajout&eacute; sur le serveur Web joue le r&ocirc;le d&rsquo;un filtre d&rsquo;acc&egrave;s au serveur HTTP et donc, le cas &eacute;ch&eacute;ant, au serveur d&rsquo;application cible dans une architecture 3-tiers. Ce toolkit "serveur" peut permettre, avant d&rsquo;acc&eacute;der &agrave; l&rsquo;application, de valider la cha&icirc;ne de certification et le statut de r&eacute;vocation du certificat client.</p>
+<p style="text-align: justify;">-&nbsp;en mode "asynchrone" : r&eacute;cup&eacute;ration de CRL via un protocole de transport comme HTTP ou LDAP</p>
+<p style="text-align: justify;">Ainsi, le processus complet d&rsquo;authentification est d&eacute;l&eacute;gu&eacute; au serveur Web. Pour effectuer ses contr&ocirc;les d&rsquo;acc&egrave;s, l&rsquo;application se contente de r&eacute;cup&eacute;rer certaines donn&eacute;es relatives &agrave; l&rsquo;identit&eacute; de l&rsquo;utilisateur ou au certificat &agrave; l&rsquo;aide d&rsquo;API.</p>
+<p style="text-align: justify;">Les offres des fournisseurs de solutions de s&eacute;curit&eacute; sur le march&eacute; proposent un type de toolkit pour les principaux serveurs http. Notamment : Microsoft IIS, Iplanet Entreprise Server et Apache. Le fonctionnement du toolkit client, pour navigateur, est similaire et &eacute;tend donc les m&eacute;canismes de s&eacute;curit&eacute; natifs des navigateurs standards, Microsoft Internet Explorer et Netscape Communicator.</p>
+<p style="text-align: justify;">&Agrave; lire aussi:&nbsp;<a href="../generalites-sur-la-pki/la-securisation-par-developpements-specifiques.html" target="_blank"><span style="text-decoration: underline;"><strong><span style="color: #3366ff; text-decoration: underline;">la s&eacute;curisation des applications par d&eacute;veloppements sp&eacute;cifiques</span></strong></span></a></p>
+<p style="text-align: justify;">&Agrave; lire aussi: <a href="../generalites-sur-la-pki/la-problematique-d-une-authentification-forte.html" target="_blank" title="Probl&eacute;matique d'une authentification forte"><span style="text-decoration: underline;"><strong style="color: #3366ff;"> La probl&eacute;matique d&rsquo;une authentification forte</strong></span></a></p>
+<p>&nbsp;</p> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	 
+</div>
+							<div style="position:absolute;top:0;left:-9999px;"><a href="http://www.globbers.net/" title="joomla templates">joomla templates</a><a href="http://www.globbers.net/" title="joomla template">joomla template</a></div>                        </div>
+                        	 	
+                    	        <div id="right">
+	                                 		<div class="moduletable">
+							<h3>Moyens de cryptographie</h3>
+						<ul class="nav menu">
+<li class="item-289"><a href="../../demande-de-declaration-prealable.html" >Demande de déclaration préalable</a></li><li class="item-290"><a href="../../demande-d-autorisation-prealable.html" >Demande d'autorisation préalable</a></li><li class="item-291"><a href="../../demande-d-homologation.html" >Demande d'homologation</a></li><li class="item-292"><a href="../../demande-de-validation-d-algorithme.html" >Demande de validation d'algorithme</a></li></ul>
+		</div>
+			<div class="moduletable">
+							<h3>Certificat numérique</h3>
+						<ul class="nav menu">
+<li class="item-210 divider deeper parent"><span class="separator ">Demande de certificats</span>
+<ul class="nav-child unstyled small"><li class="item-212"><a href="../../demande-de-certificats-fr/administration-fr.html" >Administration</a></li><li class="item-213"><a href="../../demande-de-certificats-fr/entreprise.html" >Entreprise</a></li><li class="item-215"><a href="../../demande-de-certificats-fr/individu-fr.html" >Individu</a></li><li class="item-252"><a href="../../demande-de-certificats-fr/operateur-ae.html" >Opérateur-AE</a></li><li class="item-280"><a href="../../demande-de-certificats-fr/entreprises-etrangeres.html" >Entreprises étrangères</a></li></ul></li><li class="item-216 default"><a href="../../index.html" >Opérations sur les certificats</a></li></ul>
+		</div>
+			<div class="moduletable">
+							<h3>Service client</h3>
+						<ul class="nav menu">
+<li class="item-207"><a href="../../faq-fr.html" >FAQ</a></li><li class="item-248"><a href="../../contactez-nous.html" >Contactez nous</a></li><li class="item-266"><a href="http://ra.camgovca.cm/" target="_blank">Connexion à la webRA</a></li><li class="item-275 divider deeper parent"><span class="separator ">Installation du certificat</span>
+<ul class="nav-child unstyled small"><li class="item-276"><a href="../../installation-du-certificat/certificat-racine.html" >certificat racine</a></li><li class="item-277"><a href="../../installation-du-certificat/certificat-intermediaire.html" >certificat intermédiaire</a></li></ul></li><li class="item-282"><a href="securisation-des-applications.html" >Sécurisation des applications</a></li></ul>
+		</div>
+	
+	                            </div>
+                                                            <div id="ft">
+				                    <div class="ftbl">
+                                      
+                           &nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="https://www.camgovca.cm/" title="CamGovCA"></a>&nbsp;<a target="_blank" href="mailto:pki@antic.cm" title="CamGovCA">Copyright (c) CamGovCA 2015, All Rights Reserved<br>PUBLIC KEY INFRASTRUCTURE CENTER - ANTIC - CAMEROON Tel.: +237 242 08 64 97 Fax: 222 20 39 31 email: pki@antic.cm </br></a>
+								       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                        <div id="top">
+                                            <div class="top_button">
+                                                <a href="#" onclick="scrollToTop();return false;">
+                                                <img src="../../../templates/clubys/images/top.png" width="30" height="30" alt="top" /></a>
+                                            </div>
+                                        </div>
+			                    </div>							
+    </div>			 
+<noscript><strong>JavaScript is currently disabled.</strong>Please enable it for a better experience of <a href="http://2glux.com/projects/jumi">Jumi</a>.</noscript></body> 
+
+<!-- Mirrored from camgovca.cm/fr/generalites/securisation/securisation-des-applications.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Jun 2025 07:38:35 GMT -->
+</html> 

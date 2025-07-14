@@ -1,0 +1,43 @@
+{
+    "name": "camgov/camgovca",
+    "description": "Cameroon Government Certificate Authority Management System",
+    "type": "project",
+    "keywords": ["pki", "certificate", "authority", "government", "cameroon"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cameroon Government IT Department",
+            "email": "it@camgov.cm"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-openssl": "*",
+        "ext-mysqli": "*",
+        "ext-json": "*",
+        "ext-session": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CamGovCA\\": "src/includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CamGovCA\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "setup": "php src/scripts/setup_database.php"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 

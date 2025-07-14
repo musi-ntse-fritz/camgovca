@@ -1,0 +1,92 @@
+# Configuration files with sensitive data
+src/config/database.php
+src/config/email_config.php
+src/config/*.env
+
+# Logs and temporary files
+src/logs/*.log
+src/logs/*.txt
+*.log
+*.tmp
+*.temp
+
+# Cache files
+src/templates/hts-cache/
+*.cache
+
+# Uploads and user-generated content
+src/public/uploads/
+src/public/certificates/
+src/public/temp/
+
+# Database backups (may contain sensitive data)
+src/backups/*.sql
+src/backups/*.zip
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# PHP specific
+vendor/
+composer.lock
+*.phar
+
+# Security files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Session files
+/tmp/
+/sessions/
+
+# Error logs
+error_log
+access_log
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Certificate files (sensitive)
+*.cer
+*.der
+*.p7b
+*.p7c
+
+# Private keys and certificates
+private/
+certs/
+ssl/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Node modules (if any frontend build tools are used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/ 
